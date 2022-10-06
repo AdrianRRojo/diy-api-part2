@@ -17,6 +17,7 @@ export default function Movie(){
                 console.warn(err)
             }
         }
+        getMovie()
     }, [])
 
     const handleDelete = async () => {
@@ -27,6 +28,7 @@ export default function Movie(){
             console.warn(err)
         }
     }
+    
     return(
         <div>
             <h1>Movie details: </h1>
@@ -41,6 +43,7 @@ export default function Movie(){
                 </button>
             </div>
             <div>
+                
                 <h1>{movie.title}</h1>
                 <p> {movie.summary}</p>
             </div>
